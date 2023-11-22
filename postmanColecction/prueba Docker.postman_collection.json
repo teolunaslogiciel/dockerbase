@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "23ece315-e770-453c-a88b-88145ca613b1",
+		"name": "prueba Docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12801009"
+	},
+	"item": [
+		{
+			"name": "Obtener Lista de Productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/all-products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"all-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un Produtcto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/create-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"create-product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
